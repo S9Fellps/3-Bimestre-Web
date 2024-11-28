@@ -1,0 +1,70 @@
+/*
+Created: 2020, 28 jan.
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img/bg-hotsite-2020.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    width: 100vw;
+    max-width: 1400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.wrapper .main {
+    width: 50%;
+    text-align: right;
+    align-items: right;
+}
+
+.wrapper .main img{
+    width: 50%;
+    text-align: right;
+    align-items: right;
+} 
+
+.wrapper .menu img{
+    width: 100%;
+}
+
+.wrapper .menu {
+    width: 30%;
+}
+
+
+@media (max-width: 700px) {
+    .wrapper {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapper .main, .wrapper .menu {
+        width: 100%;
+        text-align: center;
+    }
+    .wrapper .menu img, .wrapper .main img {
+        width: 70%;
+    }
+ 
+}
